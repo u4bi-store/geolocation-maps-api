@@ -1,5 +1,4 @@
-var geo, 
-    config = { apiKey: "AIzaSyBTCzFn8Gal6MKpo9jxOhkZul0dnlK7iio", authDomain: "maps-app-7d1e0.firebaseapp.com", databaseURL: "https://maps-app-7d1e0.firebaseio.com", projectId: "maps-app-7d1e0", storageBucket: "maps-app-7d1e0.appspot.com", messagingSenderId: "1068530736710" },
+var config = { apiKey: "AIzaSyBTCzFn8Gal6MKpo9jxOhkZul0dnlK7iio", authDomain: "maps-app-7d1e0.firebaseapp.com", databaseURL: "https://maps-app-7d1e0.firebaseio.com", projectId: "maps-app-7d1e0", storageBucket: "maps-app-7d1e0.appspot.com", messagingSenderId: "1068530736710" },
     db;
     
 init();
@@ -7,9 +6,7 @@ init();
 function init(){
     firebase.initializeApp(config);
     db = firebase.database();
-
-    geo = document.getElementById("geo");
-        
+    
 }
 
 
