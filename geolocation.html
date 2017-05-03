@@ -7,16 +7,10 @@
     </head>
     <body>
         
-        <p>
-            <button onclick="geoMe()">현 위치</button>
-        </p>
-        
-        <div id="geo"></div>
-
+        <button onclick="geoMe()">현 위치</button>
+    
         <script>
-            var 
-                geo = document.getElementById("geo");
-
+    
             function geoMe() {
 
                 if (!navigator.geolocation) return console.log('브라우저에서 지원하지 않음');
