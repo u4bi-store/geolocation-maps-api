@@ -49,3 +49,23 @@ function addGeo(name, lat, lon, acc, time){
     });
 
 }
+
+function selGeo(name){
+    db.ref('users/'+name)
+        .once('value')
+        .then(function(item){
+
+            var 
+                data = item.val();
+            
+            console.log('이름 : ', data.name);
+
+            console.log('위도 : ', data.lat);
+
+            console.log('경도 : ', data.lon);
+
+            console.log('정확도 : ', data.acc);
+
+            console.log('기록 시간 : ', data.time);
+        });
+}
